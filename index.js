@@ -1192,9 +1192,9 @@ wjs.prototype.ui = function(newBool) {
 wjs.prototype.notify = function(newMessage) {
     this.find(".wcp-notif").text(newMessage);
     this.find(".wcp-notif").stop().show(0);
-    if (opts[this.context].notifTimer) clearTimeout(opts[this.context].notifTimer);
+    //if (opts[this.context].notifTimer) clearTimeout(opts[this.context].notifTimer);
     wjsPlayer = this;
-    opts[this.context].notifTimer = setTimeout(function() { wjsPlayer.find(".wcp-notif").fadeOut(1500); },1000);
+    //opts[this.context].notifTimer = setTimeout(function() { wjsPlayer.find(".wcp-notif").fadeOut(1500); },1000);
 }
 
 wjs.prototype.toggleFullscreen = function() {
